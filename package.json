@@ -1,0 +1,21 @@
+{
+  "name": "notproyecto_dos",
+  "version": "1.0.0",
+  "description": "## Date: 3/25/2022",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SEIfeoluwa/NotProyecto_dos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SEIfeoluwa/NotProyecto_dos/issues"
+  },
+  "homepage": "https://github.com/SEIfeoluwa/NotProyecto_dos#readme"
+}
