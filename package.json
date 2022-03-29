@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/SEIfeoluwa/NotProyecto_dos/issues"
   },
-  "homepage": "https://github.com/SEIfeoluwa/NotProyecto_dos#readme"
+  "homepage": "https://github.com/SEIfeoluwa/NotProyecto_dos#readme",
+  "dependencies": {
+    "mongoose": "^6.2.9"
+  }
 }

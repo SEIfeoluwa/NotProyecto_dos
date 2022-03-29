@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import {Routes, Route } from 'react-router-dom'
+import FauxLanding from './pages/FauxLanding'
+import Home from './pages/Home'
+import Profile from './pages/Profile'
+import IPPage from './pages/IPPage'
+import axios from 'axios'
+import './styles/App.css';
 
 function App() {
+  const makeApiCall = async () => {
+    let res = await axios.get('')
+    console.log(res)
+  }
+  // makeApiCall();
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route index element={ <FauxLanding /> }/>
+        <Route path='/home' element={ <Home />}/>
+        <Route path='/prof' element={ <Profile />}/>
+        <Route path='/IPP' element={ <IPPage /> }/>
+      </Routes>
     </div>
   );
 }
