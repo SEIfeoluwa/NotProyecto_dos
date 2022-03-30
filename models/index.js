@@ -1,9 +1,9 @@
-const mongoose = require('mongoose')
-const PostSchema = require('./post')
+const { model } = require('mongoose')
+const PostSchema = require('./Post')
 const simUserSchema = require('./simUser')
 
-const Post = mongoose.model('Post', PostSchema)
-const simUser = mongoose.model('simUser', simUserSchema)
+const Post = model('Post', PostSchema)
+const simUser = model('simUser', simUserSchema)
 
 module.exports = {
   Post,
