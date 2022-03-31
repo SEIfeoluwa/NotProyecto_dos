@@ -8,7 +8,7 @@ const main = async () => {
 
     const preMadePost = [{
        text: "Hello World",
-       user_id: preMadeUser[0]._id 
+       simUser_id: preMadeUser[0]._id 
     }
 ]
     await Post.insertMany(preMadePost)

@@ -8,4 +8,8 @@ router.get('/users', controllers.getAllUsers)
 
 router.post('/createPosts', controllers.createPost);
 
+router.delete('/deletePost', controllers.deletePost);
+
+router.put('/updatePost/:id', controllers.updatePost);
+
 module.exports = router;

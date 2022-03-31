@@ -12,7 +12,7 @@ function App() {
     console.log(res.data.posts)
     // console.log(res.data.users)
   }
-  // makeApiCall();
+  makeApiCall();
 
   return (
     <div className="App">

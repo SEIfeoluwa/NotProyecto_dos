@@ -1,3 +1,4 @@
+const db = require('../db');
 const { Post, simUser } = require('../models');
 
 
@@ -23,6 +24,7 @@ const getAllPosts = async (req, res) => {
 const createPost = async (req, res) => {
     try {
         const post = await new Post(req.body)
+        console.log(req.body)
         await post.save()
         return res.status(201).json({
             review,
@@ -31,9 +33,31 @@ const createPost = async (req, res) => {
         return res.status(500).json({ error: error.message })
     }
 }
+const deletePost = async (req,res) => {
+        try { 
+            await Post.findOneAndDelete({ _id: req.body._id})
+            return res.status(200).json('Succesfully deleted')
+        } catch (error) {
+            return res.status(500).json({ error: error.message })
+        }
+      }
+
+const updatePost = async (req,res) => {
+    try {
+        console.log(req.body)
+        const update = await Post.findOneAndUpdate({ _id: req.params.id }, req.body, {new: true})
+        await update.save()
+        return res.status(200).json(update)
+    } catch (error) {
+        return res.status(500).json({ error: error.message })
+    }
+}
+
 
 module.exports = {
     getAllPosts,
     createPost,
-    getAllUsers
+    getAllUsers,
+    deletePost,
+    updatePost
 }

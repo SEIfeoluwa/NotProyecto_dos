@@ -8,7 +8,7 @@ const Sidebar = () => {
         <Link to="/IPP">Notifications</Link>
         <Link to="/IPP">Bookmarks</Link>
         <Link to="/IPP">Lists</Link>
-        <Link to="/profile">Profile</Link>
+        <Link to="/prof">Profile</Link>
         <Link to="/IPP">More</Link>
     </div>   
     )

@@ -10,7 +10,7 @@ const Home = () => {
   useEffect(() => {
     const makeApiCall = async () => {
       let res = await axios.get('http://localhost:3001/posts')
-      setTweet(res.data.reviews)
+      setTweet(res.data.posts)
     }
     makeApiCall();
   }, [])
@@ -21,14 +21,17 @@ const Home = () => {
           <div>
             <MakePost />
             {/* Map function for tweets, ads on the right side bar, place Makepost component  */}
-            {tweet.map((tweet) =>(
-              <Tweet 
-                key={tweet._id}
-                post={tweet.text}
-                // user={tweet.user_id}
-                timeStamp={tweet.createdAt}
-                />
-            ))}
+            <div className='tweetContainer'>
+              {tweet.map((tweet) => (
+                <Tweet 
+                  key={tweet._id}
+                  post={tweet.text}
+                  // user={tweet.user_id}
+                  timeStamp={tweet.createdAt}
+                  {...tweet}
+                  />
+              ))}  
+            </div>
           </div>
         </div>
     )
