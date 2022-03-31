@@ -8,10 +8,11 @@ import './styles/App.css';
 
 function App() {
   const makeApiCall = async () => {
-    let res = await axios.get('')
-    console.log(res)
+    let res = await axios.get('http://localhost:3001/users')
+    // console.log(res.data.posts)
+    console.log(res.data.users)
   }
-  // makeApiCall();
+  makeApiCall();
 
   return (
     <div className="App">
