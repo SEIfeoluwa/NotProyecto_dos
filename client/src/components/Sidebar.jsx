@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 const Sidebar = () => {
     return (
-     <div className="header">
+     <div className="side-nav">
         <Link to="/home">Home</Link>
         <Link to="/IPP">Messages</Link>
         <Link to="/IPP">Notifications</Link>
