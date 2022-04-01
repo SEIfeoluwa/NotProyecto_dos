@@ -51,11 +51,15 @@
   left: 0;
   padding: 20px 30px;
   text-decoration-line: none;
+  font-size: 1.5rem;
 }
 .nav-links {
   list-style: none;
   position: relative;
   text-decoration: none;
+}
+.doc {
+  text-align: left;
 }
 .nav-links li {
   padding: 10px 0;
