@@ -92,7 +92,15 @@
   border-color: white;
 }
 .login ul{
-  list-style: none
+  list-style: none;
+}
+.login li {
+  padding: 10px 40px;
+}
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .landing {
   display: grid;
