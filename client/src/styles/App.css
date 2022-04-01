@@ -91,3 +91,6 @@
 .edits {
   border-color: white;
 }
+.login ul{
+  list-style: none
+}
