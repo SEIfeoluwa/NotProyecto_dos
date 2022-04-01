@@ -43,6 +43,18 @@
   background: #e2e9f7;
 }
 
+.side-nav {
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px 30px;
+  text-decoration-line: none;
+}
+.side-nav ul {
+  list-style-type: none;
+}
 .form-layout ul{
   list-style-type: none;
 }
