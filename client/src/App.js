@@ -22,7 +22,7 @@ function App() {
         <Route path='/home' element={ <Home />}/>
         <Route path='/prof' element={ <Profile />}/>
         <Route path='/IPP' element={ <IPPage /> }/>
-        <Route path='/update' element={ <Update /> } />
+        <Route path='/update/:id' element={ <Update /> } />
       </Routes>
     </div>
   );

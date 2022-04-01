@@ -15,7 +15,12 @@ const Home = () => {
     makeApiCall();
   }, [])
 
-  
+  // const handleUpdate = async () => {
+  //   const tweet = 
+  //   await axios.put(`http://localhost:3001/updatePosts/${}`, tweet)
+  // }
+
+
 
     return (
         <div>
