@@ -40,5 +40,9 @@
 .header {
   width: 100%;
   height: 100vh;
-  
+  background: #e2e9f7;
+}
+
+.form-layout ul{
+  list-style-type: none;
 }
