@@ -26,7 +26,7 @@ const MakePost = () => {
         <form className="form-layout" onSubmit={(e) => handleSubmit(e)}>
             <ul>
                 <li>
-                    <input type="text" name='text' placeholder="What's happening?" onChange={handleChange} maxlength="280" />
+                    <input className="inputTweet" type="text" name='text' placeholder="What's happening?" onChange={handleChange} maxlength="280" />
                 </li>
                 {/* <li>
                     <button className='form-layout-button'>Tweet</button>
