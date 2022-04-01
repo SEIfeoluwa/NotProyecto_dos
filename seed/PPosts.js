@@ -7,8 +7,9 @@ const main = async () => {
     const preMadeUser = await simUser.find({})
 
     const preMadePost = [{
-       text: "Hello World",
-       simUser_id: preMadeUser[0]._id 
+       text: "Another device to evolve humanity.",
+       simUser_id: preMadeUser[0]._id,
+       user: preMadeUser[0].user
     }
 ]
     await Post.insertMany(preMadePost)
