@@ -75,3 +75,14 @@
 .logo {
   color: #1DA1F2;
 }
+.butt {
+  background-color: #1DA1F2;
+  color: white;
+  padding: 15px 60px;
+  border-radius: 25px;
+  font-size: 1.5rem;
+}
+.butt:hover {
+  background: white;
+  color: #52C4FF
+}
