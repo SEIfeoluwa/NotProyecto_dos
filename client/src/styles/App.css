@@ -63,8 +63,11 @@
 .nav-links li a {
   color: rgb(0, 0, 0);
   text-decoration: none;
-  /* padding: 10px 14px; */
+  padding: 10px 14px;
 }
 .form-layout ul{
   list-style-type: none;
+}
+.logo {
+  color: #1DA1F2;
 }
