@@ -12,7 +12,7 @@ const Sidebar = () => {
              <li className="item doc"><i class="fa-solid fa-list"></i><Link to="/IPP">Lists</Link></li>
              <li className="item doc"><i class="fa-solid fa-user"></i><Link to="/prof">Profile</Link></li>
              <li className="item doc"><i class="fa-solid fa-ellipsis"></i><Link to="/IPP">More</Link></li>
-             <li className="item"><Link to="/home"><button className="butt">Tweet</button></Link></li>
+             <li className="item"><button className="butt"><Link to="/home">Tweet</Link></button></li>
          </ul> 
     </div>   
     )

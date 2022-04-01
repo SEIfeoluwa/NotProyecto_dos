@@ -81,8 +81,10 @@
   padding: 15px 60px;
   border-radius: 25px;
   font-size: 1.5rem;
+  border-color: #1DA1F2;
 }
 .butt:hover {
   background: white;
-  color: #52C4FF
+  color: #1DA1F2;
+  border-color: white;
 }

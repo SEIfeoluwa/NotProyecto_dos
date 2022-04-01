@@ -5,7 +5,8 @@ const Profile = () => {
         <div>
             <Sidebar />
             <div className="centerProf">
-                <img src="?" />
+                <div><img src="https://pbs.twimg.com/profile_images/1503591435324563456/foUrqiEw_400x400.jpg" /></div>
+                
                 <img src="?" />
                 <h1>Elon Musk</h1>
                 <p>@elonmusk</p>
