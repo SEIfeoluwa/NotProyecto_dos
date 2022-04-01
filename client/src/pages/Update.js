@@ -1,7 +1,9 @@
 const Update = () => {
     return (
         <div>
-            <input />
+            <form>
+                
+            </form>
         </div>
     )
 }

@@ -1,7 +1,9 @@
 const Followers = () => {
     
     return (
-
+        <div>
+            
+        </div>
     )
 }
 
