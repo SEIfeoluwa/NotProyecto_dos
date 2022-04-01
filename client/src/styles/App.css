@@ -106,3 +106,21 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+#loginButt {
+  background-color: #1DA1F2;
+  color: white;
+  padding: 15px 60px;
+  border-radius: 25px;
+  font-size: 1.5rem;
+  border-color: #1DA1F2;
+}
+#loginButt:hover {
+  background: white;
+  color: #1DA1F2;
+  border-color: white;
+}
+.login li a {
+  text-decoration: none;
+  color: white;
+}
+.login:hover

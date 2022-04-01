@@ -10,7 +10,7 @@ const FauxLanding = () => {
                 <li><h1>Sign in to Twitter</h1></li>
                 <li><input type='text' value='Elonccentric'/></li>
                 <li><input type="password" id="pass" name="pass" value='KevinSucks'/></li>
-                <li><button className="loginbutt"><Link to='/home'>Log In</Link></button></li> 
+                <li><button id="loginButt"><Link to='/home'>Log In</Link></button></li> 
             </ul>  
             </div>
         </div>
