@@ -28,9 +28,9 @@ const MakePost = () => {
                 <li>
                     <input type="text" name='text' placeholder="What's happening?" onChange={handleChange} maxlength="280" />
                 </li>
-                <li>
+                {/* <li>
                     <button className='form-layout-button'>Tweet</button>
-                </li>
+                </li> */}
             </ul>
         </form>
     )

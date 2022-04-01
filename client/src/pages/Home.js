@@ -15,6 +15,8 @@ const Home = () => {
     makeApiCall();
   }, [])
 
+  
+
     return (
         <div>
           <Sidebar />  

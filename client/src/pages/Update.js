@@ -1,6 +1,8 @@
 const Update = () => {
     return (
-
+        <div>
+            <input />
+        </div>
     )
 }
 
