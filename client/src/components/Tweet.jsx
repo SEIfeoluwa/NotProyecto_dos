@@ -1,20 +1,18 @@
 import { Link } from 'react-router-dom'
-import { useState } from 'react'
+import { deletePost } from '../controllers/Controller1'
+// import { useState } from 'react'
 
 const Tweet = (props) => {
-    const [tweed, setTweed] = useState()
-
-    const handleDelete = () => {
-        
-    }
+    // const [tweed, setTweed] = useState()
+    // console.log(props)
 
 
     return (
         <div className="tweet">
             <h3>{props.post}</h3>
-            <h4>{props.timestamp}</h4>
-           <Link to='/update/{props._id}'><i class="fa-solid fa-pen-to-square"></i></Link>
-            <button OnClick={handleDelete()} className="edits"><i class="fa-solid fa-trash-can"></i></button>
+            <p className='timestamp'><small>{props.timeStamp}</small></p>
+           <Link to='/update/{props._id}'><i className="fa-solid fa-pen-to-square"></i></Link>
+            <button onClick={() => deletePost(props._id)} className="edits"><i className="fa-solid fa-trash-can"></i></button>
         </div>
     )
 }

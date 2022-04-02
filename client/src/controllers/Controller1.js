@@ -1,4 +1,4 @@
-const db = require('../db');
+// const db = require('../db');
 const { Post, simUser } = require('../models');
 
 
@@ -27,7 +27,7 @@ const createPost = async (req, res) => {
         console.log(req.body)
         await post.save()
         return res.status(201).json({
-            review,
+            post,
         });
     } catch (error) {
         return res.status(500).json({ error: error.message })
