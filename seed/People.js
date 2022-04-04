@@ -11,6 +11,10 @@ const main = async () => {
         {
            user: "Aubrey Graham",
            location: "Canada"
+        },
+        {
+            user: 'Elon Musk',
+            location: 'South Africa'
         }
     ]
     await simUser.insertMany(users)

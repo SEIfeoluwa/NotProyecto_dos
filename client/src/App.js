@@ -3,7 +3,6 @@ import FauxLanding from './pages/FauxLanding'
 import Home from './pages/Home'
 import Profile from './pages/Profile'
 import IPPage from './pages/IPPage'
-import Update from './pages/Update'
 import axios from 'axios'
 import './styles/App.css';
 
@@ -22,7 +21,6 @@ function App() {
         <Route path='/home' element={ <Home />}/>
         <Route path='/prof' element={ <Profile />}/>
         <Route path='/IPP' element={ <IPPage /> }/>
-        <Route path='/update/:id' element={ <Update /> } />
       </Routes>
     </div>
   );
