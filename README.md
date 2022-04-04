@@ -28,6 +28,9 @@
 
 ![Placeholder1](https://img.buzzfeed.com/buzzfeed-static/static/2017-09/26/6/asset/buzzfeed-prod-fastlane-01/sub-buzz-3715-1506423450-3.png?downsize=700%3A%2A&output-quality=auto&output-format=auto)
 
+### ***Screenshots***
+![Placeholder1](https://s7.gifyu.com/images/Screenshot-from-2022-04-04-08-15-05.png)
+
 ### ***Future Updates***
     *Add Like/Dislike button to the home page.
     *The retweet button
