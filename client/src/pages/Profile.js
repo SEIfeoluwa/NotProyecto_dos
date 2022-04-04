@@ -1,6 +1,19 @@
+import { useState, useEffect } from "react"
 import Sidebar from "../components/Sidebar"
+import SimTweet from "../components/SimTweet"
+import axios from "axios"
 
 const Profile = () => {
+    const [tweet, setTweet] = useState([])
+
+    useEffect(() => {
+      const makeApiCall = async () => {
+        let res = await axios.get('http://localhost:3001/simUser')
+        setTweet(res.data.posts)
+      }
+      makeApiCall();
+    }, [])
+
     return (
         <div>
             <Sidebar />
@@ -12,6 +25,17 @@ const Profile = () => {
                 <p>@elonmusk</p>
                 <p>Joined June 2009</p>
                 {/*  followers and following */}
+            </div>
+            <div className="simTweets">
+            {tweet.map((tweet) => (
+                <SimTweet 
+                    key={tweet._id}
+                    post={tweet.text}
+                    // user={tweet.user_id}
+                    timeStamp={tweet.createdAt}
+                    {...tweet}
+                />
+            ))}
             </div>
         </div>
     )

@@ -4,7 +4,9 @@ const router = Router();
 
 router.get('/posts', controllers.getAllPosts);
 
-router.get('/users', controllers.getAllUsers)
+router.get('/users', controllers.getAllUsers);
+
+router.get('/simUser', controllers.simPosts);
 
 router.post('/createPosts', controllers.createPost);
 

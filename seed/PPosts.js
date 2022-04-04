@@ -6,7 +6,8 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 const main = async () => {
     const preMadeUser = await simUser.find({})
 
-    const preMadePost = [{
+    const preMadePost = [
+        {
        text: "Please ignore prior tweets, as that was someone pretending to be me :) This is actually me.",
        simUser_id: preMadeUser[0]._id,
        user: preMadeUser[0].user
