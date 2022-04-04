@@ -4,18 +4,19 @@ const { simUser } = require('../models')
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 const main = async () => {
-    const users = [{
-        user: "Dwayne Johnson",
-        location: "West Coast"
+    const users = [
+        // {
+        //     user: 'Elon Musk',
+        //     location: 'South Africa'
+        // },
+        {
+            user: 'Ye',
+            location: 'Atlanta'
         },
         {
-           user: "Aubrey Graham",
-           location: "Canada"
+            user: 'Joe Rogan',
+            location: 'New Jersey'
         },
-        {
-            user: 'Elon Musk',
-            location: 'South Africa'
-        }
     ]
     await simUser.insertMany(users)
     console.log('Post Created')
@@ -28,3 +29,4 @@ const run = async () => {
 }
 
 run()
+

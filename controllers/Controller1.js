@@ -14,7 +14,7 @@ const getAllUsers = async (req, res) => {
 
 const simPosts = async (req, res) => {
     try {
-        const posts = await simUser.find({ user: 'Elon Musk' })
+        const posts = await Post.find({ user: 'Elon Musk' })
         console.log(posts)
         return res.status(200).json({ posts })
     } catch (error) {
@@ -80,5 +80,6 @@ module.exports = {
     getAllUsers,
     deletePost,
     updatePost,
-    deleteUser
+    deleteUser,
+    simPosts
 }
